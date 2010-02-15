@@ -14,7 +14,7 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBSession.h"
+#import "FBSession.h"
 
 typedef enum {
   FBLoginButtonStyleNormal,

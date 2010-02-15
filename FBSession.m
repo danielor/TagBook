@@ -14,8 +14,8 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBSession.h"
-#import "FBConnect/FBRequest.h"
+#import "FBSession.h"
+#import "FBRequest.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // global

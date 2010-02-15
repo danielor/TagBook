@@ -7,5 +7,5 @@
     #import <UIKit/UIKit.h>
 	#import <MapKit/MapKit.h>
 	#import <CoreLocation/CoreLocation.h>
-	#import "FBConnect/FBConnect.h"
+#import "FBConnect/FBConnect.h"
 #endif

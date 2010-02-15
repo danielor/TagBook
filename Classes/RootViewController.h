@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UserID.h"
 
 @protocol MyFlipControllerDelegate<NSObject>
 @required
 -(void)toggleView:(id)sender;							/* Change the view */
 -(CLLocationCoordinate2D) getCurrentLocation;			/* Get the current location of the phone */
 -(NSString*) getAuthenticationString;					/* Get the authentication string for the username */
+-(UserID*) getFBUID;									/* Get the facebok user id */
 @end
 
 @class TagBookViewController;

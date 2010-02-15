@@ -14,8 +14,8 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBLoginButton.h"
-#import "FBConnect/FBLoginDialog.h"
+#import "FBLoginButton.h"
+#import "FBLoginDialog.h"
 
 #import <dlfcn.h>
 

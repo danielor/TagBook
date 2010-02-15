@@ -14,8 +14,8 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBRequest.h"
-#import "FBConnect/FBSession.h"
+#import "FBRequest.h"
+#import "FBSession.h"
 #import "FBXMLHandler.h"
 #import <CommonCrypto/CommonDigest.h>
 

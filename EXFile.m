@@ -6,7 +6,6 @@
 //
 
 #import "EXFile.h"
-
 @implementation EXFile
 
 - (id)initWithName:(NSString*)_fileName {

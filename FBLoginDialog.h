@@ -14,8 +14,8 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBDialog.h"
-#import "FBConnect/FBRequest.h"
+#import "FBDialog.h"
+#import "FBRequest.h"
 
 @interface FBLoginDialog : FBDialog <FBRequestDelegate> {
   FBRequest* _getSessionRequest;

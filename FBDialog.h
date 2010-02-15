@@ -14,7 +14,7 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBConnectGlobal.h"
+#import "FBConnectGlobal.h"
 
 @protocol FBDialogDelegate;
 @class FBSession;

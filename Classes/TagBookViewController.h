@@ -18,8 +18,10 @@
 // The Entropy database
 #import "EXContainer.h"
 #import "EXFile.h"
+#import "FacebookLayer.h"
 
-@interface TagBookViewController : UIViewController<MyCLControllerDelegate, MKMapViewDelegate, MKReverseGeocoderDelegate> {
+
+@interface TagBookViewController : UIViewController<MyCLControllerDelegate, MyFacebookDelegate, MKMapViewDelegate, MKReverseGeocoderDelegate> {
 	// The outlets for the GUI builder
 	IBOutlet UIButton * tagButton;			/* The toolbar */
 	IBOutlet MKMapView * theMap;			/* The map */
@@ -46,11 +48,15 @@
 	
 	// The username 
 	UserID * uID;
+	BOOL setUID;
 	NSString * username;
 	NSString * password;
 	
 	// The database
 	EXContainer * theDatabase;
+	
+	// The Facebook layers
+	FacebookLayer * loginLayer;
 	
 	// The flip delegate
 	id flipDelegate;
@@ -70,14 +76,20 @@
 @property (nonatomic, retain) Base64 * base64Converter;
 @property (nonatomic, retain) UserID * uID;
 @property (nonatomic, retain) EXContainer * theDatabase;
+@property (nonatomic, retain) FacebookLayer * loginLayer;
+@property (nonatomic) BOOL setUID;
 
 // MyCLControlDelegate protocol
 - (void) locationUpdate:(CLLocation*)location oldLocation:(CLLocation*)OldLocation;
 - (void) locationError:(NSError*)error;
 
+// MyFacebookDelegate protocol
+-(void) UIDUpdate:(FBUID)uid;
+
 // Interface methods
 -(CLLocationCoordinate2D) getLocation;
 -(NSString*) getUserString;
+-(UserID*) getUserID;
 
 // Get data from the server, and display them
 -(void) getAllTags;

@@ -7,6 +7,7 @@
 //
 
 #import "TagEntryViewController.h"
+#import "UserID.h"
 
 
 @implementation TagEntryViewController
@@ -24,7 +25,11 @@
 -(IBAction) touchSendButton:(id)sender {
 	// The current Location of the tag
 	CLLocationCoordinate2D currentLocation = [self.flipDelegate getCurrentLocation];
-	NSString * authenticationString = [[NSString alloc] initWithFormat:@"Basic %@", [self.flipDelegate getAuthenticationString]];
+	//NSString * authenticationString = [[NSString alloc] initWithFormat:@"Basic %@", [self.flipDelegate getAuthenticationString]];
+	
+	// The user id
+	UserID * uID = [self.flipDelegate getFBUID];
+	FBUID theID = uID.theID;
 	
 	// Get the tag data
 	NSString * commentString = [commentOfTag text];
@@ -34,13 +39,13 @@
 	
 	
 	// Send the new tag
-	NSURL * serviceURL = [NSURL URLWithString:[[NSString alloc] initWithFormat:@"http://localhost:8000/api/tags"]];
+	NSURL * serviceURL = [NSURL URLWithString:[[NSString alloc] initWithFormat:@"http://localhost:8000/api/%d/tags", theID]];
 	NSMutableString * postBody = [NSMutableString stringWithFormat:@"namespace=%@", [@"test" stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	[postBody appendFormat:@"&lat=%f" , currentLocation.latitude];
 	[postBody appendFormat:@"&lng=%f", currentLocation.longitude];
 	NSMutableURLRequest * serviceRequest = [NSMutableURLRequest requestWithURL:serviceURL];
 	[serviceRequest setValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-type"];
-	[serviceRequest addValue:authenticationString forHTTPHeaderField:@"Authorization"];
+	//[serviceRequest addValue:authenticationString forHTTPHeaderField:@"Authorization"];
 	[serviceRequest setHTTPBody:[postBody dataUsingEncoding:NSUTF8StringEncoding]];
 	[serviceRequest setHTTPMethod:@"POST"];
 	

@@ -11,7 +11,7 @@
 @implementation TagBookViewController
 
 @synthesize  theMap, tagButton, geocoder, mPlacemark, tagParser, receivedData, currentElementValue, username, tagList;
-@synthesize flipDelegate, uID;
+@synthesize flipDelegate, uID, setUID, theDatabase, base64Converter, currentTag, loginLayer;
 
 // The designated initializer. Override to perform setup that is required before the view is loaded.
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
@@ -28,6 +28,17 @@
 		NSString * dbFileName = [documentsDirectory stringByAppendingString:@"/test.db"];
 		EXFile * file = [EXFile fileWithName:dbFileName];
 		theDatabase = [[EXContainer alloc] initWithFile:file];
+		
+		// Get the user ids
+		NSArray * resultSet = [theDatabase queryWithClass:[UserID class]];
+		setUID = ([resultSet count] == 0);
+		
+		for(id object in resultSet){
+			uID = (UserID*)object;
+		}
+		
+
+			
     }
     return self;
 }
@@ -41,12 +52,34 @@
 	locationController = [[CoreLocationController alloc] init];
 	locationController.delegate = self;
 	[locationController.locationManager startUpdatingLocation];
-		
+	
+	if(setUID){
+		loginLayer = [[FacebookLayer alloc] init];
+		loginLayer.myDelegate = self;
+	}
+
+	// Resume the facebook session
+	//[fSession resume];
+	
     [super viewDidLoad];
+}
+
+// Facebook session functions
+-(void) UIDUpdate:(FBUID)uid{
+	[uID setID:uid];
+	
+	// Save it to the database
+	id customObject = [[UserID alloc] initWithId:uid];
+	[theDatabase storeObject:customObject];
+	[customObject release];
 }
 
 -(CLLocationCoordinate2D) getLocation {
 	return currentLocation;
+}
+
+-(UserID *) getUserID {
+	return uID;
 }
 
 -(NSString*) getUserString {
@@ -168,6 +201,8 @@
 }
 
 - (void)locationUpdate:(CLLocation *)newLocation oldLocation:(CLLocation*)OldLocation {
+
+	
 	// Get the coordinate and format the string
 	currentLocation = [newLocation coordinate];
 	
@@ -203,14 +238,15 @@
 
 -(void) getAllTags {
 	// Get the coordinate and format the string
-	NSString * userString = [self getUserString];
-	NSString * authenticationString = [[NSString alloc] initWithFormat:@"Basic %@", userString];
+	//NSString * userString = [self getUserString];
+	//NSString * authenticationString = [[NSString alloc] initWithFormat:@"Basic %@", userString];
+	FBUID uid = uID.theID;
 	
 	// Send the tag
-	NSURL * serviceURL = [NSURL URLWithString:[[NSString alloc] initWithFormat:@"http://localhost:8000/api/tags"]];
+	NSURL * serviceURL = [NSURL URLWithString:[[NSString alloc] initWithFormat:@"http://localhost:8000/api/%d/tags", uid]];
 	NSMutableURLRequest * serviceRequest = [NSMutableURLRequest requestWithURL:serviceURL];
 //[serviceRequest setValue:@"text/xml" forHTTPHeaderField:@"Content-type"];
-	[serviceRequest addValue:authenticationString forHTTPHeaderField:@"Authorization"];
+	//[serviceRequest addValue:authenticationString forHTTPHeaderField:@"Authorization"];
 	[serviceRequest setHTTPMethod:@"GET"];
 
 	// Create the connection
@@ -271,6 +307,11 @@
 - (void)reverseGeocoder:(MKReverseGeocoder *)geocoder didFindPlacemark:(MKPlacemark *)placemark{
 	mPlacemark=placemark;
 	[theMap addAnnotation:placemark];
+	
+	if(setUID){
+
+		[loginLayer LogInFacebook];
+	}
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id <MKAnnotation>)annotation{
@@ -307,6 +348,8 @@
 	[base64Converter release];
 	[uID release];
 	[theDatabase release];
+	[loginLayer release];
+
     [super dealloc];
 }
 

@@ -42,6 +42,10 @@
 	return [self.mainViewController getUserString];
 }
 
+-(UserID*) getFBUID {
+	return [self.mainViewController getUserID];
+}
+
 // This method is called when either of the subviews send a delegate message to us.
 // It flips the displayed view from the whoever sent the message to the other.
 - (void)toggleView:(id)sender {

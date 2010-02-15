@@ -14,7 +14,7 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBLoginDialog.h"
+#import "FBLoginDialog.h"
 
 @interface FBPermissionDialog : FBLoginDialog {
   NSString* _permission;

@@ -13,4 +13,19 @@
 
 @synthesize theID;
 
+-(void) setID:(FBUID)u {
+	theID = u;
+}
+
+
+-(UserID *) initWithId:(FBUID)u {
+	self = [super init];
+	if(self){
+		[self setID:u];
+	}
+	
+	return self;
+}
+
+
 @end

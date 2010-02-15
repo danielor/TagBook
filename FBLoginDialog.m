@@ -14,9 +14,9 @@
  * limitations under the License.
 */
 
-#import "FBConnect/FBLoginDialog.h"
-#import "FBConnect/FBSession.h"
-#import "FBConnect/FBRequest.h"
+#import "FBLoginDialog.h"
+#import "FBSession.h"
+#import "FBRequest.h"
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
 // global

@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+#import "FBConnect.h"
+
 
 @interface UserID : NSObject {
-	unsigned long long theID;
+	FBUID theID;
 }
 
-@property (nonatomic) unsigned long long theID;
-
+@property (nonatomic) FBUID theID;
+-(UserID *) initWithId:(FBUID)u;
+-(void) setID:(FBUID)u;
 
 @end
