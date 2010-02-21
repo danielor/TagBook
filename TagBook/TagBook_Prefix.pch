@@ -1,0 +1,11 @@
+//
+// Prefix header for all source files of the 'TagBook' target in the 'TagBook' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+	#import <MapKit/MapKit.h>
+	#import <CoreLocation/CoreLocation.h>
+#import "FBConnect/FBConnect.h"
+#endif

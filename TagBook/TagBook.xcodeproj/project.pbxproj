@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* TagBookAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TagBookAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* TagBookViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TagBookViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* TagBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TagBookViewController.m */; };
+		E61C86921128E2D400FEA592 /* FacebookLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E61C86911128E2D400FEA592 /* FacebookLayer.m */; };
+		E64CE63111167EDC00D2AC85 /* EXContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE5F211167EDB00D2AC85 /* EXContainer.m */; };
+		E64CE63211167EDC00D2AC85 /* EXContainerUniqueIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE5F411167EDB00D2AC85 /* EXContainerUniqueIdentifier.m */; };
+		E64CE63311167EDC00D2AC85 /* EXDecomposer.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE5F611167EDB00D2AC85 /* EXDecomposer.m */; };
+		E64CE63411167EDC00D2AC85 /* EXDrainer.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE5F811167EDB00D2AC85 /* EXDrainer.m */; };
+		E64CE63511167EDC00D2AC85 /* EXException.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE5FA11167EDB00D2AC85 /* EXException.m */; };
+		E64CE63611167EDC00D2AC85 /* EXFile.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE5FC11167EDB00D2AC85 /* EXFile.m */; };
+		E64CE63711167EDC00D2AC85 /* EXGlobalSyncInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE5FE11167EDB00D2AC85 /* EXGlobalSyncInfo.m */; };
+		E64CE63811167EDC00D2AC85 /* EXMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE60011167EDB00D2AC85 /* EXMessage.m */; };
+		E64CE63911167EDC00D2AC85 /* EXMessageRelay.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE60211167EDB00D2AC85 /* EXMessageRelay.m */; };
+		E64CE63A11167EDC00D2AC85 /* EXMessenger.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE60411167EDB00D2AC85 /* EXMessenger.m */; };
+		E64CE63B11167EDC00D2AC85 /* EXObjectProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE60611167EDB00D2AC85 /* EXObjectProxy.m */; };
+		E64CE63C11167EDC00D2AC85 /* EXPersistentMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE60811167EDB00D2AC85 /* EXPersistentMessage.m */; };
+		E64CE63D11167EDC00D2AC85 /* EXPersistentObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE60A11167EDB00D2AC85 /* EXPersistentObject.m */; };
+		E64CE63E11167EDC00D2AC85 /* EXPredicate.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE60C11167EDB00D2AC85 /* EXPredicate.m */; };
+		E64CE63F11167EDC00D2AC85 /* EXPredicateEqualInt.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE60E11167EDC00D2AC85 /* EXPredicateEqualInt.m */; };
+		E64CE64011167EDC00D2AC85 /* EXPredicateEqualInt64.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE61011167EDC00D2AC85 /* EXPredicateEqualInt64.m */; };
+		E64CE64111167EDC00D2AC85 /* EXPredicateEqualText.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE61211167EDC00D2AC85 /* EXPredicateEqualText.m */; };
+		E64CE64211167EDC00D2AC85 /* EXProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE61411167EDC00D2AC85 /* EXProxy.m */; };
+		E64CE64311167EDC00D2AC85 /* EXReferringElement.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE61611167EDC00D2AC85 /* EXReferringElement.m */; };
+		E64CE64411167EDC00D2AC85 /* EXRemoteInvocationException.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE61811167EDC00D2AC85 /* EXRemoteInvocationException.m */; };
+		E64CE64511167EDC00D2AC85 /* EXServer.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE61A11167EDC00D2AC85 /* EXServer.m */; };
+		E64CE64611167EDC00D2AC85 /* EXSharedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE61C11167EDC00D2AC85 /* EXSharedObject.m */; };
+		E64CE64711167EDC00D2AC85 /* EXSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE61E11167EDC00D2AC85 /* EXSorting.m */; };
+		E64CE64811167EDC00D2AC85 /* EXSyncInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE62011167EDC00D2AC85 /* EXSyncInfo.m */; };
+		E64CE64911167EDC00D2AC85 /* EXSyncInMessageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE62211167EDC00D2AC85 /* EXSyncInMessageObject.m */; };
+		E64CE64A11167EDC00D2AC85 /* EXSyncOutMessageObject.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE62411167EDC00D2AC85 /* EXSyncOutMessageObject.m */; };
+		E64CE64B11167EDC00D2AC85 /* EXTransaction.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE62611167EDC00D2AC85 /* EXTransaction.m */; };
+		E64CE64C11167EDC00D2AC85 /* EXUpdateRequestReply.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE62811167EDC00D2AC85 /* EXUpdateRequestReply.m */; };
+		E64CE64D11167EDC00D2AC85 /* EXUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE62A11167EDC00D2AC85 /* EXUtils.m */; };
+		E64CE64E11167EDC00D2AC85 /* info.txt in Resources */ = {isa = PBXBuildFile; fileRef = E64CE62B11167EDC00D2AC85 /* info.txt */; };
+		E64CE64F11167EDC00D2AC85 /* LXSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE62D11167EDC00D2AC85 /* LXSocket.m */; };
+		E64CE65011167EDC00D2AC85 /* NSObject_iPhone_cat.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE62F11167EDC00D2AC85 /* NSObject_iPhone_cat.m */; };
+		E64CE6531116800600D2AC85 /* UserID.m in Sources */ = {isa = PBXBuildFile; fileRef = E64CE6521116800600D2AC85 /* UserID.m */; };
+		E652C86510D427AA001AEA66 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E652C86410D427AA001AEA66 /* MapKit.framework */; };
+		E652C86C10D428A5001AEA66 /* CoreLocationController.m in Sources */ = {isa = PBXBuildFile; fileRef = E652C86B10D428A5001AEA66 /* CoreLocationController.m */; };
+		E652C8C510D43142001AEA66 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E652C8C410D43142001AEA66 /* CoreLocation.framework */; };
+		E6AA678B111E1AA20065BEF6 /* libEntropyLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E6AA678A111E1AA20065BEF6 /* libEntropyLib.a */; };
+		E6AA6AAD111E3A200065BEF6 /* FBConnectGlobal.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA6A9B111E3A200065BEF6 /* FBConnectGlobal.m */; };
+		E6AA6AAE111E3A200065BEF6 /* FBSession.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA6A9D111E3A200065BEF6 /* FBSession.m */; };
+		E6AA6AAF111E3A200065BEF6 /* FBRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA6A9F111E3A200065BEF6 /* FBRequest.m */; };
+		E6AA6AB0111E3A200065BEF6 /* FBXMLHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA6AA1111E3A200065BEF6 /* FBXMLHandler.m */; };
+		E6AA6AB1111E3A200065BEF6 /* FBLoginButton.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA6AA3111E3A200065BEF6 /* FBLoginButton.m */; };
+		E6AA6AB2111E3A200065BEF6 /* FBDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA6AA5111E3A200065BEF6 /* FBDialog.m */; };
+		E6AA6AB3111E3A200065BEF6 /* FBLoginDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA6AA7111E3A200065BEF6 /* FBLoginDialog.m */; };
+		E6AA6AB4111E3A200065BEF6 /* FBPermissionDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA6AA9111E3A200065BEF6 /* FBPermissionDialog.m */; };
+		E6AA6AB5111E3A200065BEF6 /* FBStreamDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = E6AA6AAB111E3A200065BEF6 /* FBStreamDialog.m */; };
+		E6AA6AB6111E3A200065BEF6 /* FBConnect.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E6AA6AAC111E3A200065BEF6 /* FBConnect.bundle */; };
+		E6B9D019110CDD5400DC6938 /* Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = E6B9D018110CDD5400DC6938 /* Base64.m */; };
+		E6D3CF9C10D5747D009E811A /* Tag.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3CF9B10D5747D009E811A /* Tag.m */; };
+		E6D3CFF510D586ED009E811A /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3CFF410D586ED009E811A /* RootViewController.m */; };
+		E6D3CFFB10D58784009E811A /* TagEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E6D3CFF910D58784009E811A /* TagEntryViewController.m */; };
+		E6D3CFFC10D58784009E811A /* TagEntryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E6D3CFFA10D58784009E811A /* TagEntryViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TagBookAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagBookAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TagBookAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagBookAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* TagBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TagBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* TagBookViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TagBookViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* TagBookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagBookViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* TagBookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagBookViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TagBook_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagBook_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TagBook-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TagBook-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		E61C86901128E2D400FEA592 /* FacebookLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FacebookLayer.h; sourceTree = "<group>"; };
+		E61C86911128E2D400FEA592 /* FacebookLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookLayer.m; sourceTree = "<group>"; };
+		E64CE5F111167EDB00D2AC85 /* EXContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXContainer.h; sourceTree = "<group>"; };
+		E64CE5F211167EDB00D2AC85 /* EXContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXContainer.m; sourceTree = "<group>"; };
+		E64CE5F311167EDB00D2AC85 /* EXContainerUniqueIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXContainerUniqueIdentifier.h; sourceTree = "<group>"; };
+		E64CE5F411167EDB00D2AC85 /* EXContainerUniqueIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXContainerUniqueIdentifier.m; sourceTree = "<group>"; };
+		E64CE5F511167EDB00D2AC85 /* EXDecomposer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXDecomposer.h; sourceTree = "<group>"; };
+		E64CE5F611167EDB00D2AC85 /* EXDecomposer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXDecomposer.m; sourceTree = "<group>"; };
+		E64CE5F711167EDB00D2AC85 /* EXDrainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXDrainer.h; sourceTree = "<group>"; };
+		E64CE5F811167EDB00D2AC85 /* EXDrainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXDrainer.m; sourceTree = "<group>"; };
+		E64CE5F911167EDB00D2AC85 /* EXException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXException.h; sourceTree = "<group>"; };
+		E64CE5FA11167EDB00D2AC85 /* EXException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXException.m; sourceTree = "<group>"; };
+		E64CE5FB11167EDB00D2AC85 /* EXFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXFile.h; sourceTree = "<group>"; };
+		E64CE5FC11167EDB00D2AC85 /* EXFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXFile.m; sourceTree = "<group>"; };
+		E64CE5FD11167EDB00D2AC85 /* EXGlobalSyncInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXGlobalSyncInfo.h; sourceTree = "<group>"; };
+		E64CE5FE11167EDB00D2AC85 /* EXGlobalSyncInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXGlobalSyncInfo.m; sourceTree = "<group>"; };
+		E64CE5FF11167EDB00D2AC85 /* EXMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXMessage.h; sourceTree = "<group>"; };
+		E64CE60011167EDB00D2AC85 /* EXMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXMessage.m; sourceTree = "<group>"; };
+		E64CE60111167EDB00D2AC85 /* EXMessageRelay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXMessageRelay.h; sourceTree = "<group>"; };
+		E64CE60211167EDB00D2AC85 /* EXMessageRelay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXMessageRelay.m; sourceTree = "<group>"; };
+		E64CE60311167EDB00D2AC85 /* EXMessenger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXMessenger.h; sourceTree = "<group>"; };
+		E64CE60411167EDB00D2AC85 /* EXMessenger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXMessenger.m; sourceTree = "<group>"; };
+		E64CE60511167EDB00D2AC85 /* EXObjectProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXObjectProxy.h; sourceTree = "<group>"; };
+		E64CE60611167EDB00D2AC85 /* EXObjectProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXObjectProxy.m; sourceTree = "<group>"; };
+		E64CE60711167EDB00D2AC85 /* EXPersistentMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPersistentMessage.h; sourceTree = "<group>"; };
+		E64CE60811167EDB00D2AC85 /* EXPersistentMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPersistentMessage.m; sourceTree = "<group>"; };
+		E64CE60911167EDB00D2AC85 /* EXPersistentObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPersistentObject.h; sourceTree = "<group>"; };
+		E64CE60A11167EDB00D2AC85 /* EXPersistentObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPersistentObject.m; sourceTree = "<group>"; };
+		E64CE60B11167EDB00D2AC85 /* EXPredicate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPredicate.h; sourceTree = "<group>"; };
+		E64CE60C11167EDB00D2AC85 /* EXPredicate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPredicate.m; sourceTree = "<group>"; };
+		E64CE60D11167EDB00D2AC85 /* EXPredicateEqualInt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPredicateEqualInt.h; sourceTree = "<group>"; };
+		E64CE60E11167EDC00D2AC85 /* EXPredicateEqualInt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPredicateEqualInt.m; sourceTree = "<group>"; };
+		E64CE60F11167EDC00D2AC85 /* EXPredicateEqualInt64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPredicateEqualInt64.h; sourceTree = "<group>"; };
+		E64CE61011167EDC00D2AC85 /* EXPredicateEqualInt64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPredicateEqualInt64.m; sourceTree = "<group>"; };
+		E64CE61111167EDC00D2AC85 /* EXPredicateEqualText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXPredicateEqualText.h; sourceTree = "<group>"; };
+		E64CE61211167EDC00D2AC85 /* EXPredicateEqualText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXPredicateEqualText.m; sourceTree = "<group>"; };
+		E64CE61311167EDC00D2AC85 /* EXProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXProxy.h; sourceTree = "<group>"; };
+		E64CE61411167EDC00D2AC85 /* EXProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXProxy.m; sourceTree = "<group>"; };
+		E64CE61511167EDC00D2AC85 /* EXReferringElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXReferringElement.h; sourceTree = "<group>"; };
+		E64CE61611167EDC00D2AC85 /* EXReferringElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXReferringElement.m; sourceTree = "<group>"; };
+		E64CE61711167EDC00D2AC85 /* EXRemoteInvocationException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXRemoteInvocationException.h; sourceTree = "<group>"; };
+		E64CE61811167EDC00D2AC85 /* EXRemoteInvocationException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXRemoteInvocationException.m; sourceTree = "<group>"; };
+		E64CE61911167EDC00D2AC85 /* EXServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXServer.h; sourceTree = "<group>"; };
+		E64CE61A11167EDC00D2AC85 /* EXServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXServer.m; sourceTree = "<group>"; };
+		E64CE61B11167EDC00D2AC85 /* EXSharedObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXSharedObject.h; sourceTree = "<group>"; };
+		E64CE61C11167EDC00D2AC85 /* EXSharedObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXSharedObject.m; sourceTree = "<group>"; };
+		E64CE61D11167EDC00D2AC85 /* EXSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXSorting.h; sourceTree = "<group>"; };
+		E64CE61E11167EDC00D2AC85 /* EXSorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXSorting.m; sourceTree = "<group>"; };
+		E64CE61F11167EDC00D2AC85 /* EXSyncInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXSyncInfo.h; sourceTree = "<group>"; };
+		E64CE62011167EDC00D2AC85 /* EXSyncInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXSyncInfo.m; sourceTree = "<group>"; };
+		E64CE62111167EDC00D2AC85 /* EXSyncInMessageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXSyncInMessageObject.h; sourceTree = "<group>"; };
+		E64CE62211167EDC00D2AC85 /* EXSyncInMessageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXSyncInMessageObject.m; sourceTree = "<group>"; };
+		E64CE62311167EDC00D2AC85 /* EXSyncOutMessageObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXSyncOutMessageObject.h; sourceTree = "<group>"; };
+		E64CE62411167EDC00D2AC85 /* EXSyncOutMessageObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXSyncOutMessageObject.m; sourceTree = "<group>"; };
+		E64CE62511167EDC00D2AC85 /* EXTransaction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXTransaction.h; sourceTree = "<group>"; };
+		E64CE62611167EDC00D2AC85 /* EXTransaction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXTransaction.m; sourceTree = "<group>"; };
+		E64CE62711167EDC00D2AC85 /* EXUpdateRequestReply.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXUpdateRequestReply.h; sourceTree = "<group>"; };
+		E64CE62811167EDC00D2AC85 /* EXUpdateRequestReply.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXUpdateRequestReply.m; sourceTree = "<group>"; };
+		E64CE62911167EDC00D2AC85 /* EXUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXUtils.h; sourceTree = "<group>"; };
+		E64CE62A11167EDC00D2AC85 /* EXUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXUtils.m; sourceTree = "<group>"; };
+		E64CE62B11167EDC00D2AC85 /* info.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = info.txt; sourceTree = "<group>"; };
+		E64CE62C11167EDC00D2AC85 /* LXSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXSocket.h; sourceTree = "<group>"; };
+		E64CE62D11167EDC00D2AC85 /* LXSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXSocket.m; sourceTree = "<group>"; };
+		E64CE62E11167EDC00D2AC85 /* NSObject_iPhone_cat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSObject_iPhone_cat.h; sourceTree = "<group>"; };
+		E64CE62F11167EDC00D2AC85 /* NSObject_iPhone_cat.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSObject_iPhone_cat.m; sourceTree = "<group>"; };
+		E64CE63011167EDC00D2AC85 /* sqlite3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sqlite3.h; sourceTree = "<group>"; };
+		E64CE6511116800600D2AC85 /* UserID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserID.h; sourceTree = "<group>"; };
+		E64CE6521116800600D2AC85 /* UserID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserID.m; sourceTree = "<group>"; };
+		E652C86410D427AA001AEA66 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		E652C86A10D428A5001AEA66 /* CoreLocationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreLocationController.h; sourceTree = "<group>"; };
+		E652C86B10D428A5001AEA66 /* CoreLocationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreLocationController.m; sourceTree = "<group>"; };
+		E652C8C410D43142001AEA66 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		E6AA678A111E1AA20065BEF6 /* libEntropyLib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libEntropyLib.a; path = ../libEntropyLib.a; sourceTree = SOURCE_ROOT; };
+		E6AA6A99111E3A200065BEF6 /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnect.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect/FBConnect.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6A9A111E3A200065BEF6 /* FBConnectGlobal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBConnectGlobal.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect/FBConnectGlobal.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6A9B111E3A200065BEF6 /* FBConnectGlobal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBConnectGlobal.m; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnectGlobal.m"; sourceTree = SOURCE_ROOT; };
+		E6AA6A9C111E3A200065BEF6 /* FBSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBSession.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect/FBSession.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6A9D111E3A200065BEF6 /* FBSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBSession.m; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBSession.m"; sourceTree = SOURCE_ROOT; };
+		E6AA6A9E111E3A200065BEF6 /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBRequest.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect/FBRequest.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6A9F111E3A200065BEF6 /* FBRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBRequest.m; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBRequest.m"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA0111E3A200065BEF6 /* FBXMLHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBXMLHandler.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBXMLHandler.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA1111E3A200065BEF6 /* FBXMLHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBXMLHandler.m; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBXMLHandler.m"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA2111E3A200065BEF6 /* FBLoginButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLoginButton.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect/FBLoginButton.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA3111E3A200065BEF6 /* FBLoginButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLoginButton.m; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBLoginButton.m"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA4111E3A200065BEF6 /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBDialog.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect/FBDialog.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA5111E3A200065BEF6 /* FBDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBDialog.m; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBDialog.m"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA6111E3A200065BEF6 /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBLoginDialog.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect/FBLoginDialog.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA7111E3A200065BEF6 /* FBLoginDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBLoginDialog.m; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBLoginDialog.m"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA8111E3A200065BEF6 /* FBPermissionDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBPermissionDialog.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect/FBPermissionDialog.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6AA9111E3A200065BEF6 /* FBPermissionDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBPermissionDialog.m; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBPermissionDialog.m"; sourceTree = SOURCE_ROOT; };
+		E6AA6AAA111E3A200065BEF6 /* FBStreamDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBStreamDialog.h; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect/FBStreamDialog.h"; sourceTree = SOURCE_ROOT; };
+		E6AA6AAB111E3A200065BEF6 /* FBStreamDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBStreamDialog.m; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBStreamDialog.m"; sourceTree = SOURCE_ROOT; };
+		E6AA6AAC111E3A200065BEF6 /* FBConnect.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = FBConnect.bundle; path = "../Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src/FBConnect.bundle"; sourceTree = SOURCE_ROOT; };
+		E6B9D017110CDD5400DC6938 /* Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		E6B9D018110CDD5400DC6938 /* Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Base64.m; sourceTree = "<group>"; };
+		E6D3CF9A10D5747D009E811A /* Tag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tag.h; sourceTree = "<group>"; };
+		E6D3CF9B10D5747D009E811A /* Tag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tag.m; sourceTree = "<group>"; };
+		E6D3CFF310D586ED009E811A /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		E6D3CFF410D586ED009E811A /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		E6D3CFF810D58784009E811A /* TagEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagEntryViewController.h; sourceTree = "<group>"; };
+		E6D3CFF910D58784009E811A /* TagEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagEntryViewController.m; sourceTree = "<group>"; };
+		E6D3CFFA10D58784009E811A /* TagEntryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TagEntryViewController.xib; path = Classes/TagEntryViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				E652C86510D427AA001AEA66 /* MapKit.framework in Frameworks */,
+				E652C8C510D43142001AEA66 /* CoreLocation.framework in Frameworks */,
+				E6AA678B111E1AA20065BEF6 /* libEntropyLib.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3CF9910D57467009E811A /* Objects */,
+				1D3623240D0F684500981E51 /* TagBookAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TagBookAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* TagBookViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* TagBookViewController.m */,
+				E6D3CFF810D58784009E811A /* TagEntryViewController.h */,
+				E6D3CFF910D58784009E811A /* TagEntryViewController.m */,
+				E6D3CFF310D586ED009E811A /* RootViewController.h */,
+				E6D3CFF410D586ED009E811A /* RootViewController.m */,
+				E652C86A10D428A5001AEA66 /* CoreLocationController.h */,
+				E652C86B10D428A5001AEA66 /* CoreLocationController.m */,
+				E61C86901128E2D400FEA592 /* FacebookLayer.h */,
+				E61C86911128E2D400FEA592 /* FacebookLayer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TagBook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				E6AA6A98111E3A200065BEF6 /* FBConnect */,
+				E64CE5F011167E9900D2AC85 /* EntropyDB */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TagBook_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3CFFA10D58784009E811A /* TagEntryViewController.xib */,
+				2899E5210DE3E06400AC0155 /* TagBookViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* TagBook-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6AA678A111E1AA20065BEF6 /* libEntropyLib.a */,
+				E652C8C410D43142001AEA66 /* CoreLocation.framework */,
+				E652C86410D427AA001AEA66 /* MapKit.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E64CE5F011167E9900D2AC85 /* EntropyDB */ = {
+			isa = PBXGroup;
+			children = (
+				E64CE5F111167EDB00D2AC85 /* EXContainer.h */,
+				E64CE5F211167EDB00D2AC85 /* EXContainer.m */,
+				E64CE5F311167EDB00D2AC85 /* EXContainerUniqueIdentifier.h */,
+				E64CE5F411167EDB00D2AC85 /* EXContainerUniqueIdentifier.m */,
+				E64CE5F511167EDB00D2AC85 /* EXDecomposer.h */,
+				E64CE5F611167EDB00D2AC85 /* EXDecomposer.m */,
+				E64CE5F711167EDB00D2AC85 /* EXDrainer.h */,
+				E64CE5F811167EDB00D2AC85 /* EXDrainer.m */,
+				E64CE5F911167EDB00D2AC85 /* EXException.h */,
+				E64CE5FA11167EDB00D2AC85 /* EXException.m */,
+				E64CE5FB11167EDB00D2AC85 /* EXFile.h */,
+				E64CE5FC11167EDB00D2AC85 /* EXFile.m */,
+				E64CE5FD11167EDB00D2AC85 /* EXGlobalSyncInfo.h */,
+				E64CE5FE11167EDB00D2AC85 /* EXGlobalSyncInfo.m */,
+				E64CE5FF11167EDB00D2AC85 /* EXMessage.h */,
+				E64CE60011167EDB00D2AC85 /* EXMessage.m */,
+				E64CE60111167EDB00D2AC85 /* EXMessageRelay.h */,
+				E64CE60211167EDB00D2AC85 /* EXMessageRelay.m */,
+				E64CE60311167EDB00D2AC85 /* EXMessenger.h */,
+				E64CE60411167EDB00D2AC85 /* EXMessenger.m */,
+				E64CE60511167EDB00D2AC85 /* EXObjectProxy.h */,
+				E64CE60611167EDB00D2AC85 /* EXObjectProxy.m */,
+				E64CE60711167EDB00D2AC85 /* EXPersistentMessage.h */,
+				E64CE60811167EDB00D2AC85 /* EXPersistentMessage.m */,
+				E64CE60911167EDB00D2AC85 /* EXPersistentObject.h */,
+				E64CE60A11167EDB00D2AC85 /* EXPersistentObject.m */,
+				E64CE60B11167EDB00D2AC85 /* EXPredicate.h */,
+				E64CE60C11167EDB00D2AC85 /* EXPredicate.m */,
+				E64CE60D11167EDB00D2AC85 /* EXPredicateEqualInt.h */,
+				E64CE60E11167EDC00D2AC85 /* EXPredicateEqualInt.m */,
+				E64CE60F11167EDC00D2AC85 /* EXPredicateEqualInt64.h */,
+				E64CE61011167EDC00D2AC85 /* EXPredicateEqualInt64.m */,
+				E64CE61111167EDC00D2AC85 /* EXPredicateEqualText.h */,
+				E64CE61211167EDC00D2AC85 /* EXPredicateEqualText.m */,
+				E64CE61311167EDC00D2AC85 /* EXProxy.h */,
+				E64CE61411167EDC00D2AC85 /* EXProxy.m */,
+				E64CE61511167EDC00D2AC85 /* EXReferringElement.h */,
+				E64CE61611167EDC00D2AC85 /* EXReferringElement.m */,
+				E64CE61711167EDC00D2AC85 /* EXRemoteInvocationException.h */,
+				E64CE61811167EDC00D2AC85 /* EXRemoteInvocationException.m */,
+				E64CE61911167EDC00D2AC85 /* EXServer.h */,
+				E64CE61A11167EDC00D2AC85 /* EXServer.m */,
+				E64CE61B11167EDC00D2AC85 /* EXSharedObject.h */,
+				E64CE61C11167EDC00D2AC85 /* EXSharedObject.m */,
+				E64CE61D11167EDC00D2AC85 /* EXSorting.h */,
+				E64CE61E11167EDC00D2AC85 /* EXSorting.m */,
+				E64CE61F11167EDC00D2AC85 /* EXSyncInfo.h */,
+				E64CE62011167EDC00D2AC85 /* EXSyncInfo.m */,
+				E64CE62111167EDC00D2AC85 /* EXSyncInMessageObject.h */,
+				E64CE62211167EDC00D2AC85 /* EXSyncInMessageObject.m */,
+				E64CE62311167EDC00D2AC85 /* EXSyncOutMessageObject.h */,
+				E64CE62411167EDC00D2AC85 /* EXSyncOutMessageObject.m */,
+				E64CE62511167EDC00D2AC85 /* EXTransaction.h */,
+				E64CE62611167EDC00D2AC85 /* EXTransaction.m */,
+				E64CE62711167EDC00D2AC85 /* EXUpdateRequestReply.h */,
+				E64CE62811167EDC00D2AC85 /* EXUpdateRequestReply.m */,
+				E64CE62911167EDC00D2AC85 /* EXUtils.h */,
+				E64CE62A11167EDC00D2AC85 /* EXUtils.m */,
+				E64CE62B11167EDC00D2AC85 /* info.txt */,
+				E64CE62C11167EDC00D2AC85 /* LXSocket.h */,
+				E64CE62D11167EDC00D2AC85 /* LXSocket.m */,
+				E64CE62E11167EDC00D2AC85 /* NSObject_iPhone_cat.h */,
+				E64CE62F11167EDC00D2AC85 /* NSObject_iPhone_cat.m */,
+				E64CE63011167EDC00D2AC85 /* sqlite3.h */,
+			);
+			name = EntropyDB;
+			sourceTree = "<group>";
+		};
+		E6AA6A98111E3A200065BEF6 /* FBConnect */ = {
+			isa = PBXGroup;
+			children = (
+				E6AA6A99111E3A200065BEF6 /* FBConnect.h */,
+				E6AA6A9A111E3A200065BEF6 /* FBConnectGlobal.h */,
+				E6AA6A9B111E3A200065BEF6 /* FBConnectGlobal.m */,
+				E6AA6A9C111E3A200065BEF6 /* FBSession.h */,
+				E6AA6A9D111E3A200065BEF6 /* FBSession.m */,
+				E6AA6A9E111E3A200065BEF6 /* FBRequest.h */,
+				E6AA6A9F111E3A200065BEF6 /* FBRequest.m */,
+				E6AA6AA0111E3A200065BEF6 /* FBXMLHandler.h */,
+				E6AA6AA1111E3A200065BEF6 /* FBXMLHandler.m */,
+				E6AA6AA2111E3A200065BEF6 /* FBLoginButton.h */,
+				E6AA6AA3111E3A200065BEF6 /* FBLoginButton.m */,
+				E6AA6AA4111E3A200065BEF6 /* FBDialog.h */,
+				E6AA6AA5111E3A200065BEF6 /* FBDialog.m */,
+				E6AA6AA6111E3A200065BEF6 /* FBLoginDialog.h */,
+				E6AA6AA7111E3A200065BEF6 /* FBLoginDialog.m */,
+				E6AA6AA8111E3A200065BEF6 /* FBPermissionDialog.h */,
+				E6AA6AA9111E3A200065BEF6 /* FBPermissionDialog.m */,
+				E6AA6AAA111E3A200065BEF6 /* FBStreamDialog.h */,
+				E6AA6AAB111E3A200065BEF6 /* FBStreamDialog.m */,
+				E6AA6AAC111E3A200065BEF6 /* FBConnect.bundle */,
+			);
+			name = FBConnect;
+			sourceTree = "<group>";
+		};
+		E6D3CF9910D57467009E811A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E6D3CF9A10D5747D009E811A /* Tag.h */,
+				E6D3CF9B10D5747D009E811A /* Tag.m */,
+				E6B9D017110CDD5400DC6938 /* Base64.h */,
+				E6B9D018110CDD5400DC6938 /* Base64.m */,
+				E64CE6511116800600D2AC85 /* UserID.h */,
+				E64CE6521116800600D2AC85 /* UserID.m */,
+			);
+			name = Objects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TagBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TagBook" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TagBook;
+			productName = TagBook;
+			productReference = 1D6058910D05DD3D006BFB54 /* TagBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TagBook" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TagBook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* TagBookViewController.xib in Resources */,
+				E6D3CFFC10D58784009E811A /* TagEntryViewController.xib in Resources */,
+				E64CE64E11167EDC00D2AC85 /* info.txt in Resources */,
+				E6AA6AB6111E3A200065BEF6 /* FBConnect.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* TagBookAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* TagBookViewController.m in Sources */,
+				E652C86C10D428A5001AEA66 /* CoreLocationController.m in Sources */,
+				E6D3CF9C10D5747D009E811A /* Tag.m in Sources */,
+				E6D3CFF510D586ED009E811A /* RootViewController.m in Sources */,
+				E6D3CFFB10D58784009E811A /* TagEntryViewController.m in Sources */,
+				E6B9D019110CDD5400DC6938 /* Base64.m in Sources */,
+				E64CE63111167EDC00D2AC85 /* EXContainer.m in Sources */,
+				E64CE63211167EDC00D2AC85 /* EXContainerUniqueIdentifier.m in Sources */,
+				E64CE63311167EDC00D2AC85 /* EXDecomposer.m in Sources */,
+				E64CE63411167EDC00D2AC85 /* EXDrainer.m in Sources */,
+				E64CE63511167EDC00D2AC85 /* EXException.m in Sources */,
+				E64CE63611167EDC00D2AC85 /* EXFile.m in Sources */,
+				E64CE63711167EDC00D2AC85 /* EXGlobalSyncInfo.m in Sources */,
+				E64CE63811167EDC00D2AC85 /* EXMessage.m in Sources */,
+				E64CE63911167EDC00D2AC85 /* EXMessageRelay.m in Sources */,
+				E64CE63A11167EDC00D2AC85 /* EXMessenger.m in Sources */,
+				E64CE63B11167EDC00D2AC85 /* EXObjectProxy.m in Sources */,
+				E64CE63C11167EDC00D2AC85 /* EXPersistentMessage.m in Sources */,
+				E64CE63D11167EDC00D2AC85 /* EXPersistentObject.m in Sources */,
+				E64CE63E11167EDC00D2AC85 /* EXPredicate.m in Sources */,
+				E64CE63F11167EDC00D2AC85 /* EXPredicateEqualInt.m in Sources */,
+				E64CE64011167EDC00D2AC85 /* EXPredicateEqualInt64.m in Sources */,
+				E64CE64111167EDC00D2AC85 /* EXPredicateEqualText.m in Sources */,
+				E64CE64211167EDC00D2AC85 /* EXProxy.m in Sources */,
+				E64CE64311167EDC00D2AC85 /* EXReferringElement.m in Sources */,
+				E64CE64411167EDC00D2AC85 /* EXRemoteInvocationException.m in Sources */,
+				E64CE64511167EDC00D2AC85 /* EXServer.m in Sources */,
+				E64CE64611167EDC00D2AC85 /* EXSharedObject.m in Sources */,
+				E64CE64711167EDC00D2AC85 /* EXSorting.m in Sources */,
+				E64CE64811167EDC00D2AC85 /* EXSyncInfo.m in Sources */,
+				E64CE64911167EDC00D2AC85 /* EXSyncInMessageObject.m in Sources */,
+				E64CE64A11167EDC00D2AC85 /* EXSyncOutMessageObject.m in Sources */,
+				E64CE64B11167EDC00D2AC85 /* EXTransaction.m in Sources */,
+				E64CE64C11167EDC00D2AC85 /* EXUpdateRequestReply.m in Sources */,
+				E64CE64D11167EDC00D2AC85 /* EXUtils.m in Sources */,
+				E64CE64F11167EDC00D2AC85 /* LXSocket.m in Sources */,
+				E64CE65011167EDC00D2AC85 /* NSObject_iPhone_cat.m in Sources */,
+				E64CE6531116800600D2AC85 /* UserID.m in Sources */,
+				E6AA6AAD111E3A200065BEF6 /* FBConnectGlobal.m in Sources */,
+				E6AA6AAE111E3A200065BEF6 /* FBSession.m in Sources */,
+				E6AA6AAF111E3A200065BEF6 /* FBRequest.m in Sources */,
+				E6AA6AB0111E3A200065BEF6 /* FBXMLHandler.m in Sources */,
+				E6AA6AB1111E3A200065BEF6 /* FBLoginButton.m in Sources */,
+				E6AA6AB2111E3A200065BEF6 /* FBDialog.m in Sources */,
+				E6AA6AB3111E3A200065BEF6 /* FBLoginDialog.m in Sources */,
+				E6AA6AB4111E3A200065BEF6 /* FBPermissionDialog.m in Sources */,
+				E6AA6AB5111E3A200065BEF6 /* FBStreamDialog.m in Sources */,
+				E61C86921128E2D400FEA592 /* FacebookLayer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TagBook_Prefix.pch;
+				INFOPLIST_FILE = "TagBook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
+				PRODUCT_NAME = TagBook;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TagBook_Prefix.pch;
+				INFOPLIST_FILE = "TagBook-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/..\"",
+				);
+				PRODUCT_NAME = TagBook;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/danielo/Documents/Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+				USER_HEADER_SEARCH_PATHS = "";
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "/Users/danielo/Documents/Prototypes/FBConnect-IPhone/facebook-iphone-sdk/src";
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TagBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TagBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

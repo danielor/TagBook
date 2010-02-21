@@ -1,0 +1,2 @@
+/Users/danielo/Documents/TagBook/Classes/Base64.m: In function '-[Base64 initialize]':
+/Users/danielo/Documents/TagBook/Classes/Base64.m:20: warning: comparison of distinct Objective-C types lacks a cast
